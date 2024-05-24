@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competition Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Competition Platform</h1>
+        
+        <div id="auth-section">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-button">Login</button>
+        </div>
+
+        <div id="competition-section" style="display:none;">
+            <h2>Create Competition</h2>
+            <select id="category">
+                <option value="guitar_solo">Acoustic Guitar Solo</option>
+                <!-- Add more categories here -->
+            </select>
+            <input type="file" id="file-upload">
+            <input type="number" id="stake" placeholder="Stake ($)">
+            <button id="create-competition-button">Create Competition</button>
+
+            <h2>Ongoing Competitions</h2>
+            <div id="competitions"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
